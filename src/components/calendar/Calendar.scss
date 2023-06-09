@@ -1,0 +1,131 @@
+.calendar-wrapper {
+  flex-grow: 1;
+  max-width: 320px;
+  background: #4f4575;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.calendar-title {
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #f7f7f7;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.calendar-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background: rgb(247, 247, 247, 0.3);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.arrow {
+  width: 8px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin: 0 0 0 -5px;
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin: 0 -5px 0 0;
+}
+.calendar-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.calendar-days {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  font-size: 0.7rem;
+  opacity: 0.5;
+  gap: 15px;
+}
+.calendar-numbers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+
+  span {
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      border-radius: 50%;
+      background: rgb(96, 119, 247, 0.5);
+    }
+  }
+}
+.challenge {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #a7a2ba;
+  padding: 0 0 15px 0;
+
+  .activity-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: flex-start;
+    background: #edf2ff;
+    color: rgb(96, 119, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .challenge-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .activity-name {
+    width: 70%;
+    font-weight: 500;
+  }
+  .date-more-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .date {
+    color: #a7a2ba;
+  }
+  .more {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .arrow {
+      border-width: 0 2px 2px 0;
+    }
+  }
+}
