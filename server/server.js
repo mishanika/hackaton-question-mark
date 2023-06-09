@@ -21,3 +21,8 @@ app.listen(port, (err) => {
   }
   console.log(`server is listening on ${port}`);
 });
+
+app.post("/exchange_token", jsonParser, function (request, response) {
+  let code = request.get("code");
+  console.log(code);
+});
