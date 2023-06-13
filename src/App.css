@@ -21,10 +21,3 @@ body {
   align-items: center;
   background: #f5f5f2;
 }
-.app {
-  width: 1580px;
-  height: 830px;
-  background: #f5f5f2;
-  border: 1px solid white;
-  display: flex;
-}
